@@ -1,0 +1,21 @@
+#cource code 
+
+import math
+a = float(input("masukan nila a = "))
+b = float(input("masukan nila b = "))
+
+hasil = a + b 
+print("jumlah a ditambah b ",hasil)
+hasil = a - b
+print("selisih antara a dan b ",abs(hasil))
+hasil = a * b
+print("jumlah a dikali b",hasil)
+hasil = a % b
+print("jumlah sisah pembagian a dan b ",hasil)
+hasil = a / b
+print("jumlah pembagian a dan b ",hasil)
+hasil = math.log10(a)
+print ("hasil dari log(a)",hasil)
+hasil = pow(a,b)
+print("jumlah pangkat dari a dan b ",hasil)
+
