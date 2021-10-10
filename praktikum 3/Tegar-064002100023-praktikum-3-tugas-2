@@ -1,0 +1,36 @@
+Nama : Tegar
+Nim  : 064002100023
+"""
+
+from math import sqrt
+
+print("-program mencari persamaan kuadrat-")
+print("-----------------------------------")
+a = int(input("masukkan koefisien A ="))
+b = int(input("masukkan koefisien B ="))
+c = int(input("masukkan koefisien C ="))
+
+d = (b**2) - (4*a*c)
+
+if a == 0:
+    print("koefisien A tidak boleh sama dengan 0")
+else:
+    print(f"persamaan kuadrat {a} x^2 + {b}x + {c}")
+    print(f"determinan = {d}")
+    
+    if d < 0:
+        print("merupakan akar imaginer")
+        print(f"akar x1 = -{b} + akar {d} / {b} * {a}")
+        print(f"akar 2x = -{b} - akar {d} / {b} * {a}")
+    elif d == 0:
+        x1 = -b / (2*a)
+        x2 = x1
+        print("merupakan akar kembar")
+        print(f"akar x1 = {x1}")
+        print(f"akar x2 = {x2}")
+    elif d > 0:
+        x1 = (-b + sqrt(d)) / (2*a)
+        x2 = (-b - sqrt(d)) / (2*a)
+        print("merupakan akar berbeda")
+        print(f"akar x1 = {x1}")
+        print(f"akar x2 = {x2}")
