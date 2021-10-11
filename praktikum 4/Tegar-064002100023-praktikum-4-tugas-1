@@ -1,0 +1,10 @@
+Nama :Tegar
+Nim  :064002100023
+"""
+
+a = int(input("masukkan nilanya :"))
+while a > 0:
+    for i in range(a):
+        print(a, end=" ")
+    print()
+    a -= 1
