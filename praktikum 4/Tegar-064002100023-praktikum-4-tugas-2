@@ -1,0 +1,23 @@
+print("program banyaknya hari dalam suatu bulan sesuai tahunnya")
+loop = True 
+while loop == True:
+    print("ketik -1 untuk memberhentikan program")
+    month = int(input("masukkan bulan (1-12) : "))
+    if month == -1:
+        loop = False
+        print("TERIMA KASIH TELAH BERKONTRIBUSI !")
+    else:
+        if month in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
+            if month == 2:
+                year = int(input("enter the year : "))
+                if (year % 4 == 0):
+                    print("ada 29 hari pada bulan ini")
+                else:
+                    print("ada 28 hari pada bulan ini")
+            else:
+                if month in [1, 3, 5, 7, 8, 10, 12]:
+                    print("ada 31 hari pada bulan ini")
+                else:
+                    print("ada 30 hari pada bulan ini")
+        else:
+            print(f"eror!: {month}")
