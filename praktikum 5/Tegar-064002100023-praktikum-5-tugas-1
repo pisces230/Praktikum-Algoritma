@@ -1,0 +1,45 @@
+Nama : Tegar
+Nim  : 064002100023
+@author: 62822
+"""
+n=[4.00, 3.75, 3.50, 3.00, 2.75, 2.50, 2.00, 1.75, 1.50, 1.25]
+skor = 0
+
+nsiswa=[]
+
+ulang = 0
+nomor = 0
+while ulang == 0:
+    nomor += 1
+    z = str(input('"exit" untuk mengakhiri!\nNilai siswa: '))
+    if z == "exit":
+       ulang = 1
+    else:
+        if z == 'A':
+            skor = float(4.00)
+        elif z == 'A-':
+            skor = float(3.75)
+        elif z == 'B+':
+            skor = float(3.50)
+        elif z == 'B':
+            skor = float(3.00)
+        elif z == 'B-':
+            skor = float(2.75)
+        elif z == 'C+':
+            skor = float(2.50)
+        elif z == 'C':
+            skor = float(2.00)
+        elif z == 'C-':
+            skor = float(1.75)
+        elif z == 'D':
+            skor = float(1.50)
+        elif z == 'E':
+            skor = float(1.25)
+        else:
+            print('saya tidak paham ')
+            skor = 0
+        print(('\nNilai ke-{0} = {1}').format(nomor,skor))
+        nsiswa.append(skor)
+        
+rata2 = sum(nsiswa) / len(nsiswa)
+print('rata-ratanya n: ',rata2)
