@@ -1,0 +1,31 @@
+@author: 62822
+Nama : Tegar
+Nim  : 064002100023
+"""
+
+total = 0
+ngulang = "x"
+while ngulang == "x":
+    try:
+        umur_pengunjung = int(input("masukkan umur : "))
+    except ValueError:
+        break
+    else:
+        if umur_pengunjung <= 2:
+            total += 0
+            print("tiket kamu gratis! ")
+        elif umur_pengunjung >= 3 and umur_pengunjung <= 12:
+            total += float(14)
+            print("tiket kamu sebesar $14")
+        elif umur_pengunjung >= 13 and umur_pengunjung < 65:
+            total += float(23)
+            print("tiket kamu sebesar $23")
+        else:
+            total += float(18)
+            print("tiket kamu sebesar $18")
+            
+    print("total yang harus kamu bayar : $", total)
+    
+jumlahyangdibayar = int(input("masukkan uang yang di bayar : "))
+totalyangdibayar = jumlahyangdibayar - total
+print("kembalian : $", totalyangdibayar)
