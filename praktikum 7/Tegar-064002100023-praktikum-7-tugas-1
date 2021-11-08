@@ -1,0 +1,23 @@
+Nama : Tegar
+Nim  : 064002100023
+@author: 62822
+"""
+def cetakbilangan(num):
+    if num > 1:
+        angkaditentukan(num)
+    else:
+        print(num, "bilangan prima")
+        
+def angkaditentukan(num):
+    for i in range(2, num):
+            if(num % i == 0):
+                print(num, "bukan bilangan prima")
+                print(i, "x", num//i, "=", num)
+                return
+    else:
+        print(num, "bilangan prima")
+        
+p = 1
+while p == 1:
+    num = int(input("masukkan bilangan yang ingin dimasukkan :"))
+    cetakbilangan(num)
