@@ -1,0 +1,23 @@
+Nama: Tegar
+Nim : 064002100023
+"""
+
+def fibbonaci(f):
+    if f <= 1:
+        return f
+    else:
+        return(fibbonaci(f-1) + fibbonaci(f-2))
+    
+def cetak(o):
+    if o <= 0:
+        print("angka positiv")
+    else:
+        print("bilangan fibbonaci ke-"+str(o), "adalah",fibbonaci(o))
+
+while True:
+    try:
+        bil = int(input("masukkan lah bilangannya: "))
+    except ValueError:
+        print("invalid input, masukkan lah angka bulat!\n")
+    else:
+        cetak(bil)
