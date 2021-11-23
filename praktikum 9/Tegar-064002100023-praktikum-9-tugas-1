@@ -1,0 +1,32 @@
+"""
+Created on Tue Nov 23 16:12:33 2021
+Nama : Tegar
+Nim  : 064002100023
+@author: 62822
+"""
+
+A = str(input("masukkan nama : ")) 
+P = str(input("masukkan umur : "))
+C = str(input("masukkan alamat : "))
+B = str(input("masukkan email : "))
+E = str(input("masukkan dosen wali anda : "))
+
+bio = str(f"""
+Nama = {A}
+umur = {P}
+Alamat = {C}
+Email = {B}
+Dosen wali = {E}""")
+
+file = open("file_biodata.txt","w")
+file.write(str(bio))
+file.close()
+print("\nBerikut Isi Data kamu\n")
+filereaders = open("file_biodata.txt","r")
+x = filereaders.readlines()
+print(x[1])
+print(x[2])
+print(x[3])
+print(x[4])
+print(x[5])
+filereaders.close()
